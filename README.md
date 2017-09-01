@@ -4,7 +4,7 @@ We're going to build a flying object in Three.js! This would be useful if you wa
 
 HTML & CSS
 1. Import three.js library into HTML header
-2. Create a container element in HTML to hold the rendered scene (<div id="world"></div>)
+2. Create a container element in HTML to hold the rendered scene ```<div id="world"></div>)```
 3. Style it to fill the viewport
 
 JavaScript
