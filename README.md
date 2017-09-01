@@ -26,7 +26,6 @@ In this introduction to 3D JavaScript, we're going to build a flying object with
   - Three.js is a cross-browser JavaScript library/API used to create and display animated 3D graphics. It is incredibly lightweight, and has gained enough popularity to be supported by many browsers. It also allows for immense customization and abstraction, so you can essentially create anything if you have the right math for the shape.
 
 - **How does it solve the problem (conceptually)?**
-  - Rather than having to learn the complex syntax of GSLS for 3D images, Three.js allows you to create 3D images in familiar JavaScript. Additionally, because you do not have to compile the code before each run, it allows for animations to be handled by the browser's settings vs. through setTimeOut intervals.
 
 - **What are the alternatives? What is it similar to, if anything?**
   - You can use WebGL directly to build 3D objects, but if you want to focus more on the graphics and animation vs. how graphics interact with hardware, Three.js is a better option. Other high-level libraries include GLGE, SceneJS, and PhiloGL.
