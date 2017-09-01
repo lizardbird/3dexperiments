@@ -6,9 +6,9 @@ function init () {
   // add the lights
   createLights()
   // add the objects
-  createBox()
+  createBox(100, 100, 0)
   // go!
-  animate()
+  animateBox()
 }
 
 // SCENE
@@ -71,25 +71,29 @@ function createLights(){
 // Pass them into a mesh
 // add the mesh to our scene
 
-// define a new object called Box
+// define a new object function called Box
 Box = function() {
   // new Box (width, height, depth, widthSegments, heightSegments, depthSegments)
   var geometry = new THREE.BoxGeometry(100, 100, 100)
 
-  // materials describe the appearance of objects, we're using the phong material because it is good for reflecting our lights
-  var material = new THREE.MeshNormalMaterial({color: 0x00ffff})
+  // materials describe the appearance of objects
+  // I'm using the normal material, the color of the panes is dependent on it's position as it rotates, so it creates a nice rainbow effect
+  var material = new THREE.MeshNormalMaterial()
 
   // lastly, to create our object, we have to combine the geometry and the material to create a mesh
   this.mesh = new THREE.Mesh(geometry, material)
 
 }
+
+// create the box and add it to the scene
 var box
 
-function createBox() {
-  console.log('creating box');
+// I've defined this as a function which takes in x, y, z position so that we can create multiple boxes in our master function
+function createBox(x, y, z) {
   box = new Box()
-  box.mesh.position.y =  100
-  console.log(box);
+  // define the position of the box
+  box.mesh.position.y =  y
+  // add the box to your scene
   scene.add(box.mesh)
 }
 
@@ -97,9 +101,9 @@ function createBox() {
 
 // ANIMATION
 // Define how we want our object to move
-var animate = function () {
+var animateBox = function () {
   // tell the browser that we are going to do an animation
-  requestAnimationFrame(animate)
+  requestAnimationFrame(animateBox)
 
 // rotate the cube
   box.mesh.rotation.x += 0.01
