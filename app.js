@@ -95,7 +95,8 @@ function createBox() {
 
 
 
-
+// ANIMATION
+// Define how we want our object to move
 var animate = function () {
   // tell the browser that we are going to do an animation
   requestAnimationFrame(animate)
