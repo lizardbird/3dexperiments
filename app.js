@@ -6,7 +6,7 @@ function init () {
   // add the lights
   createLights()
   // add the objects
-  createBox(100, 100, 0)
+  createBox(100, 150, 0)
   createWorld()
   // go!
   animateBox()
@@ -29,7 +29,7 @@ function createScene () {
   // set the camera position
   camera.position.z = 200
   camera.position.x = 0
-  camera.position.y = 70
+  camera.position.y = 100
 
   // renderer displays the scene using webGL - Web Graphics Library which is a JS API for rendering 3D graphics with any compatible web browser through plug-ins
   renderer = new THREE.WebGLRenderer({
