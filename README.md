@@ -8,15 +8,15 @@ In this introduction to 3D JavaScript, we're going to build a flying object with
 3. Using CSS, style the element to fill the viewport ```width: 100%; height: 100%```
 
 ## JavaScript
-- Define an init function to contain all the main functions we need to create including:
-- CreateScene function
+1. Define an init function to contain all the main functions we need to create including:
+2. CreateScene function
   - This includes the scene, camera, and renderer, which will be attached to the HTML container
-- CreateLights function
+3. CreateLights function
   - This declares how light will be established on the screen
-- CreateBox function
+4. CreateBox function
   - This is where we create our object by defining its geometry, material, and then mesh
   - Note: Material colors need to be defined in hexadecimal value,  eg. ```0xffffff```
- - Animate function which describes how we want the object to behave
+ 5. Animate function which describes how we want the object to behave
 
 ## Q&A
 - **Why did you choose this subject? How were you first made aware of it?**
@@ -44,10 +44,10 @@ In this introduction to 3D JavaScript, we're going to build a flying object with
   - The [Three.js.org](https://threejs.org/) documentation was the most helpful from an explanation and inspiration standpoint. They have an [introductory tutorial](https://threejs.org/docs/index.html#manual/introduction/Creating-a-scene) and myriad [examples](https://threejs.org/examples/) of it in action. After following their tutorial to make a basic cube, I began experimenting with lights, different materials, positioning, and then added more objects.
 
 - **What are 3 interview questions one might be asked about this technology?**
-  1. What is Three.js?
-    - Since this language is not widely used yet, you may have to explain that it is an open source JS 3D library that allows you to make and display animated and interactive 3D graphics without proprietary plug-ins.
-  2. What are key features of Three.js?
-    - As you can see in my code example, the key features are scenes, cameras, lights, renderers, and objects which need geometries, materials, and mesh. There are many additional features, but these are the essentials.
-  3. How can one set a transparent background in Three.js?
-    - Pass in the alpha parameter to the WebGLRenderer so that your background/rest of the site is visible behind the animation.
-    ```var renderer= new THREE.WebGLRenderer( { alpha: true} ) ```
+  - What is Three.js?
+      - Since this language is not widely used yet, you may have to explain that it is an open source JS 3D library that allows you to make and display animated and interactive 3D graphics without proprietary plug-ins.
+  - What are key features of Three.js?
+      - As you can see in my code example, the key features are scenes, cameras, lights, renderers, and objects which need geometries, materials, and mesh. There are many additional features, but these are the essentials.
+  - How can one set a transparent background in Three.js?
+      - Pass in the alpha parameter to the WebGLRenderer so that your background/rest of the site is visible behind the animation.
+      ```var renderer= new THREE.WebGLRenderer( { alpha: true} ) ```
