@@ -10,12 +10,12 @@ In this introduction to 3D JavaScript, we're going to build a flying object with
 ## JavaScript
 1. Define an init function to contain all the main functions we need to create including:
 2. CreateScene function
-  - This includes the scene, camera, and renderer, which will be attached to the HTML container
+    - This includes the scene, camera, and renderer, which will be attached to the HTML container
 3. CreateLights function
-  - This declares how light will be established on the screen
+    - This declares how light will be established on the screen
 4. CreateBox function
-  - This is where we create our object by defining its geometry, material, and then mesh
-  - Note: Material colors need to be defined in hexadecimal value,  eg. ```0xffffff```
+    - This is where we create our object by defining its geometry, material, and then mesh
+    - Note: Material colors need to be defined in hexadecimal value,  eg. ```0xffffff```
  5. Animate function which describes how we want the object to behave
 
 ## Q&A
