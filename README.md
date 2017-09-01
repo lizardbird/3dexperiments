@@ -1,9 +1,9 @@
-# 3Dexperiments
+# 3D Experimentation
 
 In this introduction to 3D JavaScript, we're going to build a flying object with Three.js! This would be useful if you wanted to have a rotating logo on your site, create a game where the object has to fly to catch points, or model a real world object online for use in AR or VR.
 
 ## HTML & CSS
-1. Import three.js library into HTML header
+1. Import Three.js library into HTML header
 2. Create a container element in HTML to hold the rendered scene ```<div id="world"></div>)```
 3. Using CSS, style the element to fill the viewport ```width: 100%; height: 100%```
 
